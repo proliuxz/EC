@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace EC.Core.Entities
 {
     public class BaseEntity
     {
-        public int Id { get; set; }
+        [Key]
+        public Guid Id { get; set; }
     }
 }
